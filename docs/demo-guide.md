@@ -53,9 +53,12 @@ This simulates:
 
 ## 3. Connecting Live IDEs (Manual Testing)
 
-### Connecting Client 1: Cursor (Alice)
-Add the following to your Cursor MCP settings (`~/.cursor/mcp.json` or Cursor Settings → Features → MCP Servers):
+### Connecting Client 1: VS Code or Cursor (Alice)
 
+#### In VS Code:
+We have created [`.vscode/mcp.json`](file:///Users/yassir/Documents/GitHub/parallax/.vscode/mcp.json) in this repository. If you are using VS Code with **GitHub Copilot**, **Cline**, **Roo Code**, or **Continue.dev**:
+
+1. **Cline / Roo Code / Continue Extension:** Open extension settings → MCP Servers → paste:
 ```json
 {
   "mcpServers": {
@@ -69,7 +72,10 @@ Add the following to your Cursor MCP settings (`~/.cursor/mcp.json` or Cursor Se
 }
 ```
 
-#### Test in Cursor Chat:
+#### In Cursor:
+Add the snippet above to your Cursor MCP settings (`~/.cursor/mcp.json` or Settings → MCP).
+
+#### Test in VS Code / Cursor Chat:
 > *"Create a new investigation session for incident INC-1042 titled 'Checkout latency spike in GCP'"*  
 > *"Search GCP logs for errors in the last 15 minutes"*  
 > *"Search Sentry for unresolved issues"*
