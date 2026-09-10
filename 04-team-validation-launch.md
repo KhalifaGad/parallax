@@ -28,7 +28,7 @@
 - ✅ Auth #2: team-shared service-account-style as default; per-user OAuth optional/off by default.
 - ✅ MCP client compatibility: broad (300+ clients), documented per-client in `docs/install/`.
 - ✅ **Platform framing:** Architecture supports the project being a plugin platform with investigation as the *first composition*; future plugins (infrastructure diagrams, cost optimization, etc.) compose on the same substrate. *Public positioning leads with investigation product*; platform framing surfaces only once plugin #2 ships.
-- ✅ **Product name locked: Parallax.** Substrate-neutral and protocol-free, so it survives the platform reframing. `@parallax` npm scope free; bare `parallax` package squatted; GitHub org `parallax` taken. Domain and trademark checks outstanding.
+- ✅ **Product name locked: Parallax.** Substrate-neutral and protocol-free, so it survives the platform reframing. `@parallax` npm scope free; bare `parallax` package squatted; GitHub org `parallax` taken. Domain acquisition and trademark search tracked as Phase 1 tasks below.
 
 ---
 
@@ -140,7 +140,7 @@ Also: get listed on awesome-mcp-servers, awesome-sre, awesome-observability list
 
 ### Phase 1 — Mode 1 (v0, ships to first design partner)
 
-1. Repository legal files: LICENSE (FSL-1.1-Apache-2.0), NOTICE, CONTRIBUTING.
+1. Repository legal files: LICENSE (FSL-1.1-Apache-2.0), NOTICE, CONTRIBUTING. Domain acquisition and trademark search (classes 9 and 42) for the Parallax name.
 2. License choice (FSL vs BSL specifically for core).
 3. Repository scaffolding: pnpm workspace, `packages/core`, `packages/connector-sdk`, `packages/plugin-investigation`, `packages/auth`, `packages/cli`, Docker Compose, GitHub Actions CI.
 4. Storage layer: Drizzle schemas with Postgres regex constraints, migrations, Redis client. Multi-tenant data isolation primitives in schema from day one. `connector_credentials` table with mode-agnostic schema (supports team-shared and per-user; per-record encryption with master key).

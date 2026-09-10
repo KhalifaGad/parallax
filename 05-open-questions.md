@@ -33,7 +33,7 @@
 
 ### Recently resolved (no longer open)
 
-- ~~Product name~~ → **Parallax locked.** Substrate-neutral and protocol-free (no "incident," "investigation," or "MCP" in the name), so it survives the platform reframing and any shift away from MCP as transport. Metaphor maps to the cross-vendor correlation primitive: multiple viewpoints on one object resolve its true position. **Namespace:** `@parallax` npm scope free (what the monorepo needs); bare `parallax` npm package is a squatted v0.0.0 placeholder from 2022; GitHub org `parallax` taken. Domain + trademark checks still outstanding.
+- ~~Product name~~ → **Parallax locked.** Substrate-neutral and protocol-free (no "incident," "investigation," or "MCP" in the name), so it survives the platform reframing and any shift away from MCP as transport. Metaphor maps to the cross-vendor correlation primitive: multiple viewpoints on one object resolve its true position. **Namespace:** `@parallax` npm scope free (what the monorepo needs); bare `parallax` npm package is a squatted v0.0.0 placeholder from 2022; GitHub org `parallax` taken, so the repo lives under a personal namespace. Domain acquisition and trademark search moved to the Phase 1 task list.
 - ~~OSS vs closed-source decision~~ → OSS-core confirmed.
 - ~~Pivot to RCA agent~~ → No, stay in investigation workflow lane.
 - ~~Apache 2.0 vs other licenses (for core)~~ → Apache 2.0 ruled out; FSL or BSL.
@@ -73,7 +73,7 @@ Each topic below is a dedicated session — don't mix them.
 - **Pricing and business model details** — per-seat vs per-investigation vs per-vendor-connected, free tier limits, enterprise benchmarks.
 - **Build planning and timeline** — after team commitment is locked.
 - **Marketing strategy** — OSS launch, HackerNews, developer community, content for SRE audience.
-- ~~**Naming**~~ → Resolved: Parallax. Remaining: domain acquisition and a trademark search (classes 9 and 42) before the OSS launch.
+- ~~**Naming**~~ → **Closed.** Parallax locked; see the resolved item above. Domain acquisition and the trademark search are now Phase 1 build tasks, not open questions.
 - **Auth model** — client auth to our aggregator + connector auth to upstream vendors. Both have substantial design surface.
 - **Web UI for management** — eventual v1 of the management UI.
 - **OSS launch strategy** — GitHub strategy, documentation, contributor guide, CI, community.
