@@ -19,8 +19,16 @@ export interface PostmortemInput {
 export function generatePostmortemMarkdown(data: PostmortemInput): string {
   const durationMinutes = Math.max(1, Math.round((data.closedAt.getTime() - data.openedAt.getTime()) / (60 * 1000)));
   const totalQueries = data.events.length;
-  const cachedQueries = data.events.filter(e => e.cacheHit).length;
+  const cachedQueries = data.events.filter(e => e.cacheHit || e.outputData?._cache?.hit).length;
   const cacheHitPercentage = totalQueries > 0 ? Math.round((cachedQueries / totalQueries) * 100) : 0;
+
+  const timelineRows = data.events.length === 0
+    ? '_No tool queries recorded in session._'
+    : data.events.map(e => {
+        const time = e.createdAt.toISOString().slice(11, 19);
+        const cacheBadge = (e.cacheHit || e.outputData?._cache?.hit) ? ' `[CACHE HIT 0ms]`' : '';
+        return `- **${time} UTC** [${e.userName}]: Executed \`${e.toolName}\`${cacheBadge} → ${e.summary || 'Completed query'}`;
+      }).join('\n');
 
   return `
 # Incident Postmortem: ${data.title}
@@ -42,11 +50,7 @@ During this incident, on-call engineers identified and mitigated **${data.title}
 ---
 
 ## 2. Chronological Investigation Timeline
-${data.events.length === 0 ? '_No tool queries recorded in session._' : data.events.map(e => {
-  const time = e.createdAt.toISOString().slice(11, 19);
-  const cacheBadge = e.cacheHit ? ' `[CACHE HIT 0ms]`' : '';
-  return `- **${time} UTC** [${e.userName}]: Executed \`${e.toolName}\`${cacheBadge} → ${e.summary || 'Completed query'}`;
-}).join('\n')}
+${timelineRows}
 
 ---
 
