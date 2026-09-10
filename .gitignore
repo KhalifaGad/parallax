@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------------------
+# Default-deny. Everything in this working directory is ignored unless it is
+# explicitly un-ignored below. Add a "!" line only after reviewing the file.
+# ---------------------------------------------------------------------------
+*
+
+!.gitignore
+!README.md
+!00-overview.md
+!01-architecture.md
+!02-business-and-product.md
+!03-competitive-landscape.md
+!04-team-validation-launch.md
+!05-open-questions.md
+!agent-investigation-summary.md
+!main-investigation-summary.md
