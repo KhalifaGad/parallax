@@ -2,7 +2,7 @@
 
 Extracted from `raw/agent-session.jsonl`. This is the **second** of two sessions
 that produced the silent-payment-capture investigation. The other is the
-orchestrator session (`main-investigation-session.jsonl`).
+orchestrator session (`raw/main-investigation-session.jsonl`).
 
 ## High-level numbers
 
@@ -115,10 +115,10 @@ ConnectorAvailability  (probe history)
 ## Artifacts in this folder
 
 - `raw/agent-session.jsonl` — raw agent session (9 MB)
-- `agent-investigation-tool-calls.csv` — flat tool-call timeline (283 rows)
+- `raw/agent-investigation-tool-calls.csv` — flat tool-call timeline (283 rows)
 - `agent-investigation-summary.md` — this file
-- `main-investigation-session.jsonl` — orchestrator session, already extracted
-- `main-investigation-tool-calls.csv` — orchestrator timeline (782 rows)
+- `raw/main-investigation-session.jsonl` — orchestrator session, already extracted
+- `raw/main-investigation-tool-calls.csv` — orchestrator timeline (782 rows)
 - `main-investigation-summary.md` — orchestrator behavioral spec
 
 ## What to do with both datasets
