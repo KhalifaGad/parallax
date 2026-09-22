@@ -1,0 +1,19 @@
+{
+  "name": "@parallax/connector-gcp",
+  "version": "0.1.0",
+  "description": "GCP Cloud Logging and Cloud Trace connector for Parallax",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@google-cloud/logging": "^11.2.0",
+    "@parallax/connector-sdk": "workspace:*",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}

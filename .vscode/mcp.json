@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "parallax-alice": {
+      "url": "http://localhost:3100/mcp",
+      "headers": {
+        "Authorization": "Bearer user_alice_cursor"
+      }
+    }
+  }
+}

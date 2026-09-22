@@ -1,0 +1,19 @@
+{
+  "name": "@parallax/connector-github",
+  "version": "0.1.0",
+  "description": "GitHub commits, PRs, and deployment tracking connector for Parallax",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.1.1",
+    "@parallax/connector-sdk": "workspace:*",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
